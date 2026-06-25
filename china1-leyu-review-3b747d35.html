@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>leyu · 日常查询与延伸阅读</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #f6f7f9;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #2c2f36;
+    }
+    .hero {
+      background: linear-gradient(145deg, #0b1a2e 0%, #14283f 60%, #1d3857 100%);
+      padding: 4rem 1.5rem 3.2rem;
+      text-align: center;
+      color: #eef3f9;
+      border-bottom: 1px solid #2b4b6a;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .hero .sub {
+      font-size: 1rem;
+      opacity: 0.85;
+      max-width: 600px;
+      margin: 0.5rem auto 0;
+      background: rgba(255,255,255,0.06);
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      display: inline-block;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2.2rem 1.5rem 4rem;
+    }
+    .intro-card {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem 2rem 1.8rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+      margin-bottom: 2.5rem;
+    }
+    .intro-card p {
+      font-size: 1.05rem;
+      margin-bottom: 1.1rem;
+    }
+    .highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      margin: 2rem 0 2.5rem;
+    }
+    .highlight-item {
+      background: white;
+      border-radius: 28px;
+      padding: 1.6rem 1.8rem;
+      flex: 1 1 200px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.02);
+      border: 1px solid #eaeef3;
+      transition: all 0.15s ease;
+    }
+    .highlight-item:hover {
+      border-color: #94b6d4;
+      box-shadow: 0 8px 18px rgba(20,60,100,0.04);
+    }
+    .highlight-item h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #1a3c5a;
+      margin-bottom: 0.3rem;
+    }
+    .highlight-item p {
+      font-size: 0.95rem;
+      color: #3e4a5a;
+      margin: 0;
+    }
+    .scenario-block {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem 2rem 1.8rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid #517d9e;
+    }
+    .scenario-block h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #1b3b55;
+      margin-bottom: 0.8rem;
+    }
+    .scenario-block ul {
+      list-style: none;
+      padding: 0;
+    }
+    .scenario-block li {
+      padding: 0.4rem 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    .scenario-block li::before {
+      content: "—";
+      color: #6b8daa;
+      font-weight: 300;
+      display: inline-block;
+      width: 1.2rem;
+    }
+    .faq-mini {
+      background: #eef3f8;
+      border-radius: 20px;
+      padding: 1.8rem 2rem;
+      margin: 2rem 0 2.5rem;
+    }
+    .faq-mini h3 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color: #254b64;
+    }
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+    .faq-item strong {
+      display: block;
+      font-weight: 500;
+      color: #1f3f56;
+      margin-bottom: 0.1rem;
+    }
+    .faq-item p {
+      margin: 0;
+      color: #3e4f60;
+    }
+    .tip-note {
+      background: transparent;
+      border: 1px dashed #b5cbd9;
+      border-radius: 40px;
+      padding: 1rem 1.8rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #2d4f6b;
+      margin: 1.8rem 0;
+    }
+    .tip-note a {
+      color: #1b5a7c;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 450;
+    }
+    .tip-note a:hover {
+      color: #0f3b54;
+    }
+    .footer-note {
+      text-align: center;
+      font-size: 0.88rem;
+      color: #6a7b8a;
+      border-top: 1px solid #dce4ec;
+      padding-top: 2.2rem;
+      margin-top: 2rem;
+      letter-spacing: 0.02em;
+    }
+    .footer-note a {
+      color: #1b5a7c;
+    }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .container { padding: 1.5rem 1rem 3rem; }
+      .intro-card, .scenario-block, .faq-mini { padding: 1.5rem; }
+      .highlights { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>日常查询 · 对照 · 延伸</h1>
+  <div class="sub">leyu · 一个可参考的信息整合入口</div>
+</div>
+
+<div class="container">
+
+  <div class="intro-card">
+    <p>在许多工作与学习场景中，我们时常需要查找对照数据、回顾要点或延伸了解更多背景。一个结构清晰、适合反复查阅的起点，往往能节省不少时间。<strong>leyu</strong> 正是为这类需求而设——它不替代深度研究，但可以作为日常查询与信息对照的便捷落脚点。</p>
+    <p>无论是快速核对版本说明，还是顺着线索进一步浏览，保持一个固定的参考位置，会让阅读节奏更流畅。下面从几个侧面展开，看看它能如何融入你的使用习惯。</p>
+  </div>
+
+  <div class="highlights">
+    <div class="highlight-item">
+      <h3>摘要式对照</h3>
+      <p>关键信息集中排列，便于横向比较或快速定位差异点。</p>
+    </div>
+    <div class="highlight-item">
+      <h3>延伸阅读线索</h3>
+      <p>每个条目下留有关联方向，帮助你在需要时继续往下探索。</p>
+    </div>
+    <div class="highlight-item">
+      <h3>稳定入口</h3>
+      <p>相同的地址结构，适合加入书签或笔记，反复回查。</p>
+    </div>
+  </div>
+
+  <div class="scenario-block">
+    <h2>常见使用场景</h2>
+    <ul>
+      <li>日常核对：打开 <a href="https://china1-leyu.com">leyu</a> 快速过一遍最新摘要，确认自己掌握的信息是否完整。</li>
+      <li>资料整理：在撰写报告或笔记时，把 leyu 放在一旁作为参考锚点，随时对照细节。</li>
+      <li>延伸浏览：阅读过程中遇到不熟悉的术语或背景，顺着页面内的线索跳转，保持思路连贯。</li>
+    </ul>
+  </div>
+
+  <div class="faq-mini">
+    <h3>常见疑问 · 简要说明</h3>
+    <div class="faq-item">
+      <strong>需要注册或登录吗？</strong>
+      <p>不需要。leyu 是一个开放式信息页，直接打开即可浏览，无需任何账户操作。</p>
+    </div>
+    <div class="faq-item">
+      <strong>内容更新频率如何？</strong>
+      <p>页面会根据相关来源的变化进行调整，建议定期回访以获取最新对照信息。</p>
+    </div>
+    <div class="faq-item">
+      <strong>可以引用页面内容吗？</strong>
+      <p>可以。但建议以原始来源为准，leyu 仅作为整理与呈现的辅助入口。</p>
+    </div>
+  </div>
+
+  <div class="tip-note">
+    <span>💡 使用提示：将 <a href="https://china1-leyu.com">leyu</a> 加入书签栏，下次需要查询或延伸阅读时，无需再搜索，一步直达。</span>
+  </div>
+
+  <div class="footer-note">
+    <p>本页面仅为信息展示与参考，不构成任何引导或保证。所有内容请以原始出处为准。</p>
+    <p style="margin-top:0.4rem;"><a href="https://china1-leyu.com">leyu</a> · 日常查询 对照 延伸</p>
+  </div>
+
+</div>
+
+</body>
+</html>
